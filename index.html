@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Strona</title>
+        <meta charset="utf-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'> 
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="odliczanie();">
+        <div class="box">
+            Godzina: <span id="clock"></span>
+            <hr>
+            Data: <span id="date"></span>
+        </div>
+        <script type="text/javascript" src="timer.js"></script>
+
+        <div class="box">
+            <input type="number" id="x" placeholder="1. liczba">
+            <input type="number" id="y" placeholder="2. liczba">
+            <br>
+            <input type="button" class="button" onclick="licz()" value="Sprawdź!" style="cursor: pointer;">
+            <hr>
+            <div id="scoreBG" class="scoreBG">
+                <center>
+                    <label id="placeholderScore">Tutaj wyświetli się wynik...</label><span id="score" class="score" style="display: none; width: fit-content;"></span>
+                </center>
+            </div>
+        </div>
+        <script type="text/javascript" src="counter.js"></script>
+    </body>
+</html>

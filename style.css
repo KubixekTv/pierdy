@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Bahnschrift';
+}
+div.box{
+    user-select: none;
+
+    text-align: center;
+    color: white;
+    font-size: 40px;
+
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+
+    background: linear-gradient(229deg, #007bc2, #c000ca);
+    background-size: 400% 400%;
+
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 4px black;
+    border-bottom-width: 15px;
+    text-shadow: 0px 3px 0px black;
+
+    animation: gradient-slide 10s infinite ease;
+}
+@keyframes gradient-slide {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+hr{
+    height: 3px;
+    box-shadow: 0px 3px 0px black;
+    background-color: white;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    border: none;
+}
+.box span{
+    background-color: black;
+    border-radius: 5px;
+    padding: 3px;
+}
+.box input{
+    background-color: black;
+    color: white;
+    font-family: 'Bahnschrift';
+    font-size: 30px;
+
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+
+    transition: all 0.3s;
+}
+.box input.button{
+    width: 100%;
+    transition: 0.3s;
+}
+.box input.button:hover{
+    background-color: white;
+    color: black;
+}
+.box input.button:active{
+    transform: scale(0.95);
+}
+.scoreBG{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.5);
+}
